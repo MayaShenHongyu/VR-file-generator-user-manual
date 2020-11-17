@@ -1,10 +1,25 @@
 # VR File Generator
 
-This file generator generates files for the VR experiment based on user requirements. There are two kinds of files you can generate: VR configuration file and trial file.
+This file generator generates files for the VR experiment (WinObjVR) based on user requirements. There are two kinds of files you can generate: configuration file and trial file.
+
+- Configuration file: `config.json`
+    This file specifies the configuration for the overall experiment and the name of the trial file, which will have the details for all the trials within the experiment.
+- Trial file: `[trial name].json`
+    This file contains the information for all of the trials in the experiment. It consists of a list of `trial`s. A `trial` is a trial number and a `scene`, which specifies the objects in the scene and their parameters such as velocity, start position, end position, etc.
+
+There are three forms to enable users to generate these files: configuration form, scene basic information form, and object form.
+- Configuration file form: generate configuratoin file
+    <img src="/images/configuration_file_builder.png" alt="Config builder" width="70%" />
+- Scene basic information form: set up basic information of a scene
+    <img src="/images/scene_builder_1.png" alt="Scene builder 1" width="70%" />
+- Object form: specify the paramers of an object -- object type (e.g. car), velocity, start position, end position, etc.
+    A scene consists of multiple objects. The user will specify object number in scene basic information form, and the user will be asked to fill in one object form for each object.
+    <img src="/images/object_form.png" alt="Object form"  />
+
 
 ## Usage
 
-#### Generate VR configuration files
+#### Generate configuration files
 Click on the "Generate configuration" button on the home page, and you will see the form for generating configuration files:
 
 <img src="/images/configuration_file_builder.png" alt="Config builder" width="70%" />
@@ -12,8 +27,8 @@ Click on the "Generate configuration" button on the home page, and you will see 
 #### Generate trial files
 Click on the "Generate trial" button on the home page to access the menu page of trial file genertor.
 
-A trial file consists of multiple scenes, so scenes need to be created before trial files are generated.
-To create a scene, click on the "Create scene" button and complete the forms.
+Scenes are building blocks of trials, so we must have a pool of available scenes before we can generate a trial file.
+To create a scene, click on the "Create scene" button and complete the forms. Each scene consists of >= 1 objects. 
 
 <img src="/images/scene_builder_1.png" alt="Scene builder 1" width="70%" />
 <img src="/images/scene_builder_2.png" alt="Scene builder 1" width="70%" />
@@ -57,7 +72,7 @@ In JSON, values must be one of the following data types:
 
 
 ## Customize forms
-This app allows users customize two forms: configuratoin file form (used in configuration file builder) and object form (used in scene builder). A form can be customized with a JSON array containing form entry definitions. Each definition configures an entry in the form.
+This app allows users to customize two forms: configuration file form and object form. A form can be customized with a JSON array containing form entry definitions. Each definition configures an entry in the form.
 
 Note: Before using this feature, you need to make sure you can describe the desired outcome: What should the form look like? What should the output file look like? You should be able to write out the output JSON files by hand.
 
