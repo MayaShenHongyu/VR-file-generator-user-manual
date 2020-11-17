@@ -106,7 +106,7 @@ And if I type in `8`, the output file will look like this:
 }
 ```
 
-### Types
+### Types of Form Entry
 
 
 ##### `"text"`
