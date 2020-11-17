@@ -107,7 +107,12 @@ And if I type in `8`, the output file will look like this:
 ```
 
 ### Types of Form Entry
-
+Five types of form entry are supported:
+- text: allows users to input a string
+- number: allows users to input an integer or decimal
+- switch: allows users to input a `true` or a `false`
+- select: allows user to select from a dropdown menu
+- list: allows user to input a list of texts or numbers
 
 ##### `"text"`
 - (Optional) `"defaultValue"`: Default value for this entry. This must be a string.
