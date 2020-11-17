@@ -3,9 +3,9 @@
 This file generator generates files for the VR experiment (WinObjVR) based on user requirements. There are two kinds of files you can generate: configuration file and trial file.
 
 - Configuration file: `config.json`
-    This file specifies the configuration for the overall experiment and the name of the trial file, which will have the details for all the trials within the experiment.
+    - This file specifies the configuration for the overall experiment and the name of the trial file, which will have the details for all the trials within the experiment.
 - Trial file: `[trial name].json`
-    This file contains the information for all of the trials in the experiment. It consists of a list of `trial`s. A `trial` is a trial number and a `scene`, which specifies the objects in the scene and their parameters such as velocity, start position, end position, etc.
+    - This file contains the information for all of the trials in the experiment. It consists of a list of `trial`s. A `trial` is a trial number and a `scene`, which specifies the objects in the scene and their parameters such as velocity, start position, end position, etc.
 
 There are three forms to enable users to generate these files: configuration form, scene basic information form, and object form.
 - Configuration file form: generate configuratoin file
@@ -13,7 +13,7 @@ There are three forms to enable users to generate these files: configuration for
 - Scene basic information form: set up basic information of a scene
     <img src="/images/scene_builder_1.png" alt="Scene builder 1" width="70%" />
 - Object form: specify the paramers of an object -- object type (e.g. car), velocity, start position, end position, etc.
-    A scene consists of multiple objects. The user will specify object number in scene basic information form, and the user will be asked to fill in one object form for each object.
+    - A scene consists of multiple objects. The user will specify object number in scene basic information form, and the user will be asked to fill in one object form for each object.
     <img src="/images/object_form.png" alt="Object form"  />
 
 
