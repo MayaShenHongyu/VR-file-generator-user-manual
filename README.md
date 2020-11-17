@@ -19,12 +19,12 @@ There are three forms to enable users to generate these files: configuration for
 
 ## Usage
 
-#### Generate configuration files
+### Generate configuration files
 Click on the "Generate configuration" button on the home page, and you will see the form for generating configuration files:
 
 <img src="/images/configuration_file_builder.png" alt="Config builder" width="70%" />
 
-#### Generate trial files
+### Generate trial files
 Click on the "Generate trial" button on the home page to access the menu page of trial file genertor.
 
 Scenes are building blocks of trials, so we must have a pool of available scenes before we can generate a trial file.
