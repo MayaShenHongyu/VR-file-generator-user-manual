@@ -9,7 +9,7 @@ This file generator generates files for the VR experiment (WinObjVR) based on us
 
 There are three forms to enable users to generate these files: configuration form, scene basic information form, and object form.
 - Configuration file form: generate configuratoin file
-    <img src="/images/configuration_file_builder.png" alt="Config builder" width="70%" />
+    <img src="https://github.com/MayaShenHongyu/VR-file-generator-user-manual/blob/master/images/configuration_file_builder.png" alt="Config builder" width="70%" />
 - Scene basic information form: set up basic information of a scene
     <img src="/images/scene_builder_1.png" alt="Scene builder 1" width="70%" />
 - Object form: specify the paramers of an object -- object type (e.g. car), velocity, start position, end position, etc.
